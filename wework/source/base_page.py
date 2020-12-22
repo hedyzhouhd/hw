@@ -6,6 +6,7 @@ from selenium import webdriver
 
 class BasePage:
     def __init__(self, base_driver=None):
+        base_driver: webdriver
         if base_driver is None:
             options = webdriver.ChromeOptions()
             options.debugger_address = '127.0.0.1:9227'
