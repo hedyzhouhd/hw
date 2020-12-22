@@ -1,0 +1,382 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '错误参数' == 'sssss'\n  - sssss\n  + 错误参数",
+      "children" : [ {
+        "name" : "test_mul[illegal]",
+        "uid" : "9b2bed5472d169ce",
+        "parentUid" : "8291f1ca322cf924fb40f58fe9902e8d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616361288,
+          "stop" : 1608616361304,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      }, {
+        "name" : "test_mul[illegal]",
+        "uid" : "8d9aafb7a9907b41",
+        "parentUid" : "8291f1ca322cf924fb40f58fe9902e8d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363554,
+          "stop" : 1608616363554,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      }, {
+        "name" : "test_mul[illegal]",
+        "uid" : "86148e97480592d2",
+        "parentUid" : "8291f1ca322cf924fb40f58fe9902e8d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363762,
+          "stop" : 1608616363762,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      } ],
+      "uid" : "8291f1ca322cf924fb40f58fe9902e8d"
+    }, {
+      "name" : "AssertionError: assert 3.1 == 3.3333333333333335\n  +3.1\n  -3.3333333333333335",
+      "children" : [ {
+        "name" : "test_div[float]",
+        "uid" : "89a103f81bdddfd2",
+        "parentUid" : "7f38de54bcdd6f6bf7fdc5318f2d5c07",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363409,
+          "stop" : 1608616363409,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "10", "3", "3.1" ]
+      }, {
+        "name" : "test_div[float]",
+        "uid" : "537c97709e05c7cb",
+        "parentUid" : "7f38de54bcdd6f6bf7fdc5318f2d5c07",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363574,
+          "stop" : 1608616363574,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "10", "3", "3.1" ]
+      }, {
+        "name" : "test_div[float]",
+        "uid" : "79a5983c3e59791b",
+        "parentUid" : "7f38de54bcdd6f6bf7fdc5318f2d5c07",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363794,
+          "stop" : 1608616363794,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "10", "3", "3.1" ]
+      } ],
+      "uid" : "7f38de54bcdd6f6bf7fdc5318f2d5c07"
+    }, {
+      "name" : "AssertionError: assert 3.1 == 3.0999999999999996\n  +3.1\n  -3.0999999999999996",
+      "children" : [ {
+        "name" : "test_sub[float]",
+        "uid" : "375f096d929a2b20",
+        "parentUid" : "1c4ec0c475e87b0a650c9b5addc7c33e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363452,
+          "stop" : 1608616363452,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9.0", "5.9", "3.1" ]
+      }, {
+        "name" : "test_sub[float]",
+        "uid" : "99f63df0947a67a1",
+        "parentUid" : "1c4ec0c475e87b0a650c9b5addc7c33e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363506,
+          "stop" : 1608616363506,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9.0", "5.9", "3.1" ]
+      }, {
+        "name" : "test_sub[float]",
+        "uid" : "dc734b379347e32e",
+        "parentUid" : "1c4ec0c475e87b0a650c9b5addc7c33e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363703,
+          "stop" : 1608616363703,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9.0", "5.9", "3.1" ]
+      } ],
+      "uid" : "1c4ec0c475e87b0a650c9b5addc7c33e"
+    }, {
+      "name" : "AssertionError: assert -1 == 2\n  +-1\n  -2",
+      "children" : [ {
+        "name" : "test_mul[int]",
+        "uid" : "f2b0182847fe73ec",
+        "parentUid" : "6d8341be08cb1c365706596274f0f82b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363534,
+          "stop" : 1608616363535,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1", "2", "-1" ]
+      } ],
+      "uid" : "6d8341be08cb1c365706596274f0f82b"
+    }, {
+      "name" : "AssertionError: assert 3.1 == 53.1\n  +3.1\n  -53.1",
+      "children" : [ {
+        "name" : "test_mul[float]",
+        "uid" : "94846392f9e7e30a",
+        "parentUid" : "3458aed0f1eccdefc3965165ed410365",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363546,
+          "stop" : 1608616363546,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9.0", "5.9", "3.1" ]
+      } ],
+      "uid" : "3458aed0f1eccdefc3965165ed410365"
+    }, {
+      "name" : "AssertionError: assert -10 == -9\n  +-10\n  --9",
+      "children" : [ {
+        "name" : "test_mul[minus]",
+        "uid" : "4e4bba87a7f420a9",
+        "parentUid" : "6164e03607217e4dd3a354746549ac2d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363562,
+          "stop" : 1608616363562,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "-9", "1", "-10" ]
+      } ],
+      "uid" : "6164e03607217e4dd3a354746549ac2d"
+    }, {
+      "name" : "AssertionError: assert 10 == 9.0\n  +10\n  -9.0",
+      "children" : [ {
+        "name" : "test_div[minus]",
+        "uid" : "8311457e7850e3bd",
+        "parentUid" : "07273648acb030716308f5984a13d222",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608616363590,
+          "stop" : 1608616363590,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "-9", "-1", "10" ]
+      } ],
+      "uid" : "07273648acb030716308f5984a13d222"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: can only concatenate str (not \"int\") to str",
+      "children" : [ {
+        "name" : "test_add[illegal]",
+        "uid" : "858eed435c6d66fa",
+        "parentUid" : "e055865276aa8c01ebf150c81e5da6eb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363378,
+          "stop" : 1608616363378,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      }, {
+        "name" : "test_add[illegal]",
+        "uid" : "95cbb5673e7531e",
+        "parentUid" : "e055865276aa8c01ebf150c81e5da6eb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363488,
+          "stop" : 1608616363488,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      }, {
+        "name" : "test_add[illegal]",
+        "uid" : "79732787e0a256a3",
+        "parentUid" : "e055865276aa8c01ebf150c81e5da6eb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363668,
+          "stop" : 1608616363668,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      } ],
+      "uid" : "e055865276aa8c01ebf150c81e5da6eb"
+    }, {
+      "name" : "TypeError: unsupported operand type(s) for /: 'str' and 'int'",
+      "children" : [ {
+        "name" : "test_div[illegal]",
+        "uid" : "9553ef5d9a755ff2",
+        "parentUid" : "a5f941e67cc408d9558fc6422fe46afd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363426,
+          "stop" : 1608616363426,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      }, {
+        "name" : "test_div[illegal]",
+        "uid" : "4918603c439a1902",
+        "parentUid" : "a5f941e67cc408d9558fc6422fe46afd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363582,
+          "stop" : 1608616363582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      }, {
+        "name" : "test_div[illegal]",
+        "uid" : "5524f3f4d92f977d",
+        "parentUid" : "a5f941e67cc408d9558fc6422fe46afd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363807,
+          "stop" : 1608616363807,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      } ],
+      "uid" : "a5f941e67cc408d9558fc6422fe46afd"
+    }, {
+      "name" : "ZeroDivisionError: division by zero",
+      "children" : [ {
+        "name" : "test_div[zero]",
+        "uid" : "57d755bee982c250",
+        "parentUid" : "23d45e2b95d72e21c04056363d6f717f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363437,
+          "stop" : 1608616363437,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4", "0", "'被除数不能为0'" ]
+      }, {
+        "name" : "test_div[zero]",
+        "uid" : "8454186e8a5e7e4f",
+        "parentUid" : "23d45e2b95d72e21c04056363d6f717f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363598,
+          "stop" : 1608616363598,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4", "0", "'被除数不能为0'" ]
+      }, {
+        "name" : "test_div[zero]",
+        "uid" : "91e44cc2ff0267ea",
+        "parentUid" : "23d45e2b95d72e21c04056363d6f717f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363831,
+          "stop" : 1608616363831,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4", "0", "'被除数不能为0'" ]
+      } ],
+      "uid" : "23d45e2b95d72e21c04056363d6f717f"
+    }, {
+      "name" : "TypeError: unsupported operand type(s) for -: 'str' and 'int'",
+      "children" : [ {
+        "name" : "test_sub[illegal]",
+        "uid" : "5016b35d217252ff",
+        "parentUid" : "e3e7e27d43f2692fdc974581645acdc6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363459,
+          "stop" : 1608616363459,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      }, {
+        "name" : "test_sub[illegal]",
+        "uid" : "4125dcb107187234",
+        "parentUid" : "e3e7e27d43f2692fdc974581645acdc6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363515,
+          "stop" : 1608616363515,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      }, {
+        "name" : "test_sub[illegal]",
+        "uid" : "9613cf50fdba968a",
+        "parentUid" : "e3e7e27d43f2692fdc974581645acdc6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608616363719,
+          "stop" : 1608616363719,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'s'", "5", "'错误参数'" ]
+      } ],
+      "uid" : "e3e7e27d43f2692fdc974581645acdc6"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

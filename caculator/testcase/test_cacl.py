@@ -37,3 +37,8 @@ class TestCalculator:
                              ids=['int', 'float', 'illegal', 'minus', 'zero'])
     def test_div(self, a, b, expect):
         assert expect == self.cacl.div(a, b)
+
+    @pytest.mark.parametrize('a', [1, 2, 3])
+    @pytest.mark.parametrize('b', [4, 5, 6])
+    def test_combine(self, a, b):
+        print("a=%s,b=%s" % (a, b))

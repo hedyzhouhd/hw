@@ -1,0 +1,95 @@
+{
+  "uid" : "aaf2a9b2e9e2bd7b",
+  "name" : "test_div[minus]",
+  "fullName" : "caculator.testcase.test_cacl2.TestCalculator#test_div",
+  "historyId" : "a0cde128810ba1379407219059f72cbb",
+  "time" : {
+    "start" : 1608616363820,
+    "stop" : 1608616363821,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1608616363815,
+      "stop" : 1608616363820,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1608616363823,
+      "stop" : 1608616363823,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "caculator.testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_cacl2"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalculator"
+  }, {
+    "name" : "host",
+    "value" : "837-11"
+  }, {
+    "name" : "thread",
+    "value" : "14528-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "caculator.testcase.test_cacl2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "-9"
+  }, {
+    "name" : "b",
+    "value" : "-1"
+  }, {
+    "name" : "expect",
+    "value" : "9"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aaf2a9b2e9e2bd7b.json",
+  "parameterValues" : [ "-9", "-1", "9" ]
+}

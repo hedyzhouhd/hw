@@ -1,0 +1,101 @@
+{
+  "uid" : "dc734b379347e32e",
+  "name" : "test_sub[float]",
+  "fullName" : "caculator.testcase.test_cacl2.TestCalculator#test_sub",
+  "historyId" : "4d4aa9f7cd480602820191476c97eac9",
+  "time" : {
+    "start" : 1608616363703,
+    "stop" : 1608616363703,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 3.1 == 3.0999999999999996\n  +3.1\n  -3.0999999999999996",
+  "statusTrace" : "self = <caculator.testcase.test_cacl2.TestCalculator object at 0x0000014D69273668>, a = 9.0, b = 5.9, expect = 3.1\n\n    @pytest.mark.parametrize(\"a,b,expect\",\n                             get_yml_data()['sub']['values'],\n                             ids=get_yml_data()['sub']['ids'])\n    def test_sub(self, a, b, expect):\n>       assert expect == self.cacl.sub(a, b)\nE       assert 3.1 == 3.0999999999999996\nE         +3.1\nE         -3.0999999999999996\n\ntest_cacl2.py:44: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1608616363697,
+      "stop" : 1608616363702,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1608616363709,
+      "stop" : 1608616363710,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "caculator.testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_cacl2"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalculator"
+  }, {
+    "name" : "host",
+    "value" : "837-11"
+  }, {
+    "name" : "thread",
+    "value" : "14528-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "caculator.testcase.test_cacl2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "9.0"
+  }, {
+    "name" : "b",
+    "value" : "5.9"
+  }, {
+    "name" : "expect",
+    "value" : "3.1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "dc734b379347e32e.json",
+  "parameterValues" : [ "9.0", "5.9", "3.1" ]
+}

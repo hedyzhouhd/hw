@@ -1,0 +1,95 @@
+{
+  "uid" : "5ce26d0df6eca88c",
+  "name" : "test_mul[float]",
+  "fullName" : "caculator.testcase.test_cacl2.TestCalculator#test_mul",
+  "historyId" : "fdbf011656d917d127fa503d5b57671e",
+  "time" : {
+    "start" : 1608616363752,
+    "stop" : 1608616363752,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1608616363747,
+      "stop" : 1608616363752,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1608616363754,
+      "stop" : 1608616363754,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "caculator.testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_cacl2"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalculator"
+  }, {
+    "name" : "host",
+    "value" : "837-11"
+  }, {
+    "name" : "thread",
+    "value" : "14528-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "caculator.testcase.test_cacl2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "9.0"
+  }, {
+    "name" : "b",
+    "value" : "5.9"
+  }, {
+    "name" : "expect",
+    "value" : "53.1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5ce26d0df6eca88c.json",
+  "parameterValues" : [ "9.0", "5.9", "53.1" ]
+}

@@ -1,0 +1,56 @@
+{
+  "uid" : "c80b6c8d1a34dd31",
+  "name" : "check_demo1",
+  "fullName" : "caculator.testcase.check_initest.CheckIni#check_demo1",
+  "historyId" : "102881c3158122633aac023c248accb2",
+  "time" : {
+    "start" : 1608616363471,
+    "stop" : 1608616363471,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "caculator.testcase"
+  }, {
+    "name" : "suite",
+    "value" : "check_initest"
+  }, {
+    "name" : "subSuite",
+    "value" : "CheckIni"
+  }, {
+    "name" : "host",
+    "value" : "837-11"
+  }, {
+    "name" : "thread",
+    "value" : "14528-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "caculator.testcase.check_initest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c80b6c8d1a34dd31.json",
+  "parameterValues" : [ ]
+}
