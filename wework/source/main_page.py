@@ -5,10 +5,11 @@ from wework.source.add_member_page import AddMemberPage
 from wework.source.base_page import BasePage
 from selenium.webdriver.common.by import By
 
+from wework.source.contact_page import ContactPage
+
 
 class MainPage(BasePage):
     def goto_add_member(self):
-        self.driver.get("https://work.weixin.qq.com/wework_admin/frame#index")
         el = self.driver.find_element(By.CLASS_NAME, "ww_indexImg_AddMember")
         locate = (By.CLASS_NAME, "ww_indexImg_AddMember")
         WebDriverWait(self.driver, timeout=5).until(
@@ -17,10 +18,8 @@ class MainPage(BasePage):
         return AddMemberPage(self.driver)
 
     def goto_contacts(self):
-        pass
-
-
-if __name__ == "__main__":
-    obj = MainPage()
-    obj.goto_add_member()
-
+        """
+        跳转通讯录页面
+        """
+        self.driver.find_element(By.CSS_SELECTOR, '#menu_contacts').click()
+        # return ContactPage(self.driver)
