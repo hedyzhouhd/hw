@@ -19,3 +19,12 @@
   ### 5.testcase目录下所有用例的执行结果
     结合allure生成测试结果报告
   
+## 企业微信app自动化
+  ### 2第二次实战
+    1）app-启动配置
+    2）公共方法-base_page2
+    3）首页-home_page
+    4）通讯录页-contact_page
+    5）添加成员页-add_mbr_page
+    6）手动添加成员页- add_member_manual
+    7）测试文件-test_add_member2.py
