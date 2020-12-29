@@ -22,7 +22,7 @@ class ContactPage(BasePage2):
 
     def goto_add_mbr_page(self):
         """
-        点击添加成员-跳转进入添加成员页面
+        点击添加成员-跳转进入添加成员页面add_mbr_page
         """
         self.scroll_find_click("添加成员")
         return AddMbrPage(self.driver)

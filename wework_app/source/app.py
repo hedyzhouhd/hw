@@ -11,6 +11,7 @@ class App(BasePage2):
         if self.driver is None:
             caps = {}
             caps['platformName'] = 'Android'
+            caps['automationName'] = 'UiAutomator2'  # 抓取toast信息
             caps['platformVersion'] = '6.0.1'
             caps['deviceName'] = '127.0.0.1:7555'
             caps['appPackage'] = 'com.tencent.wework'
