@@ -3,6 +3,8 @@ import os
 import yaml
 from selenium import webdriver
 from selenium.webdriver.android.webdriver import WebDriver
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 class BasePage:
@@ -12,11 +14,10 @@ class BasePage:
             options = webdriver.ChromeOptions()
             options.debugger_address = '127.0.0.1:9227'
             self.driver = webdriver.Chrome(options=options)
-            self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
             self.file_path = os.path.abspath(
                 os.path.join(os.getcwd(), "..", "..", 'wework/data/wework_login_cookies.yml'))
-            self.get_cookies()
-            self.set_cookies()
+            # self.get_cookies()
+            # self.set_cookies()
         else:
             self.driver = base_driver
         self.driver.implicitly_wait(5)
@@ -33,4 +34,10 @@ class BasePage:
         self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
         for cookie in cookies:
             self.driver.add_cookie(cookie)
-        self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
+
+    def wait_and_click(self, locator, secs=10):
+        WebDriverWait(self.driver, secs).until(expected_conditions.element_to_be_clickable(locator))
+        self.driver.find_element(*locator).click()
+
+    def wait_for_visible(self, locator, secs=10):
+        WebDriverWait(self.driver, secs).until(expected_conditions.visibility_of(locator))

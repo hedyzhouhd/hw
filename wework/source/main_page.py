@@ -1,9 +1,10 @@
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from wework.source.add_member_page import AddMemberPage
 from wework.source.base_page import BasePage
 from selenium.webdriver.common.by import By
+from wework.source.add_member_page import AddMemberPage
+
 
 from wework.source.contact_page import ContactPage
 
@@ -21,5 +22,8 @@ class MainPage(BasePage):
         """
         跳转通讯录页面
         """
-        self.driver.find_element(By.CSS_SELECTOR, '#menu_contacts').click()
-        # return ContactPage(self.driver)
+        # from wework.source.contact_page import ContactPage
+        locate_contact = (By.CSS_SELECTOR, '#menu_contacts')
+        WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable(locate_contact))
+        self.driver.find_element(*locate_contact).click()
+        return ContactPage(self.driver)
