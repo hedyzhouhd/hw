@@ -1,0 +1,12 @@
+# 1.输入框输入搜索关键字
+- locator: com.xueqiu.android:id/search_input_text
+  by: MobileBy.ID
+  action: find_and_send
+# 2.点击编码为09988的股票
+- locator: //*[text()='09988']
+  by: MobileBy.XPATH
+  action: find_and_click
+# 3.获取这只股票的价格
+- locator: //*[@text='09988']/../../..//*[@resource-id='com.xueqiu.android:id/current_price']
+  by: MobileBy.XPATH
+  action: text

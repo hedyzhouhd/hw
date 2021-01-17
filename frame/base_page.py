@@ -1,3 +1,4 @@
+import yaml
 from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions
@@ -11,22 +12,22 @@ class BasePage:
         self.black_list = [(MobileBy.ID, 'com.xueqiu.android:id/iv_close')]
 
     @handle_black
-    def find(self, locator):
+    def find(self, by, locator):
         """
         封装查找元素方法
         :param locator:
         :return: 查找的元素
         """
-        return self.driver.find_element(*locator)
+        return self.driver.find_element(by, locator)
 
-    def find_and_click(self, locator):
+    def find_and_click(self, by, locator):
         """
         查找到元素并进行点击
         :param locator:
         :return:
         """
-        WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable(locator))
-        self.find(locator).click()
+        WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable((by, locator)))
+        self.find(by, locator).click()
 
     def find_and_send(self, by, locator, text):
         """
@@ -64,3 +65,29 @@ class BasePage:
             self.driver.swipe(0, height * (find_times + 1) / 5, 0, height * find_times / 5)
             els = self.driver.find_elements(by, locator)
         els[0].click()
+
+    def load_step(self, yaml_path, *args):
+        """
+        关键字驱动
+        :param yaml_path: 关键字驱动yaml文件路径
+        :param args: send方法输入的内容，列表长度与send个数一致
+        :return:
+        """
+        res = []
+        data = yaml.load(open(yaml_path, encoding='utf-8'))
+        i = 0
+        for step in data:
+            locator = step.get('locator')
+            by = step.get('by')
+            action = step.get('action')
+            if action == "find_and_click":
+                self.find_and_click(by, locator)
+            elif action == "find_and_send":
+                content = args[i]
+                i = i+1
+                print(eval(by))
+                self.driver.find_element(eval(by), locator).send_keys(content)
+            elif action == "text":
+                tmp_text = self.driver.find_element(by, locator).text
+                res.append(tmp_text)
+        return res

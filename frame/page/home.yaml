@@ -1,0 +1,5 @@
+- find: //*[@resource-id='com.xueqiu.android:id/tab_name' and @text='行情']
+  action: find_and_click
+- find: com.xueqiu.android:id/post_status
+  action: send
+  content: hello

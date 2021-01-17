@@ -1,0 +1,4 @@
+2021-01-17-22-35-12 - test_search_page.py - test_search_page - test_search - 15 - INFO - 开始打印日志
+2021-01-17-22-35-26 - test_search_page.py - test_search_page - test_search - 20 - INFO - 异常情况：Message: 
+
+2021-01-17-22-35-26 - test_search_page.py - test_search_page - test_search - 22 - INFO - 结束打印日志

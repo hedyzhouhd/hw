@@ -2,6 +2,7 @@ from appium.webdriver.common.mobileby import MobileBy
 
 from frame.base_page import BasePage
 from frame.page.quotation_page import QuotationPage
+from frame.page.search_page import SearchPage
 
 
 class HomePage(BasePage):
@@ -16,3 +17,12 @@ class HomePage(BasePage):
         el = self.find(quotation_locator)
         el.click()
         return QuotationPage(self.driver)
+
+    def goto_market_page(self):
+        """
+        使用关键字驱动方式跳转行情页
+        :return:
+        """
+    def goto_search_page(self):
+        self.find_and_click(MobileBy.ID, 'com.xueqiu.android:id/tv_search')
+        return SearchPage(self.driver)

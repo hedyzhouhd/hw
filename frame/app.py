@@ -17,6 +17,8 @@ class App(BasePage):
             caps['appActivity'] = '.common.MainActivity'
             caps['noReset'] = 'true'
             caps['settings[waitForIdleTimeout]'] = 0
+            caps['unicodeKeyboard'] = 'true'
+            caps['resetKeyboard'] = 'true'
             self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         else:
             self.driver.launch_app()
