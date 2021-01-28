@@ -74,7 +74,7 @@ class BasePage:
         :return:
         """
         res = []
-        data = yaml.load(open(yaml_path, encoding='utf-8'))
+        data = yaml.safe_load(open(yaml_path, encoding='utf-8'))
         i = 0
         for step in data:
             locator = step.get('locator')

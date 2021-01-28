@@ -10,5 +10,5 @@ def record_video():
     cmd = 'scrcpy --record file.mp4'
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     print(p)
-    yield
+    yield 'file.mp4'
     os.kill(p.pid, signal.CTRL_C_EVENT)
