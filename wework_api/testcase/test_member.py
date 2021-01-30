@@ -19,10 +19,8 @@ class TestMember:
 
     @pytest.mark.parametrize('data', [data_dict])
     def test_create_member(self, data):
-        print(type(data))
-        print(type(json.dumps(data)))
         r = self.member.create_member(data)
-        print(r.json())
+        print(r.raw)
         assert r.json()['errcode'] == 0
 
     def test_get_member(self):

@@ -9,15 +9,17 @@ class Member:
         self.access_token = TokenLogin().get_token2()
 
     def create_member(self, data):
+        """
+        ToDO:1.中文编码问题  2.创建成功，但是有warnings:{"errcode":0,"errmsg":"created. Warning: wrong json format. "}
+        :param data:
+        :return:
+        """
         r = requests.post(
             url=f'https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token={self.access_token}',
-            data={
-                "userid": "zhangsan",
-                "name": "张三",
-                "alias": "jackzhang",
-                "mobile": "+86 13800000000",
-                "department": '3'
-            }
+            headers={
+                'Content-Type': 'application/json; charset=UTF-8'
+            },
+            data=json.dumps(data)
         )
         return r
 
@@ -42,3 +44,4 @@ class Member:
             params=params
         )
         return r
+
