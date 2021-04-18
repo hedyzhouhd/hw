@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>调色盘</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">=</script>
+</head>
+    <div id="app" >\
+
+        <div :style="{width: '500px', height: '50px', background: `rgb(${R},${G},${B})`}"></div>
+        <input type="range" max="255" min="0" id="R" v-model="R">{{R}}</br>
+        <input type="range" max="255" min="0" id="G" v-model="G">{{G}}</br>
+        <input type="range" max="255" min="0" id="B" v-model="B">{{B}}</br>
+    </div>
+</body>
+    <script>
+       var vue = new Vue({
+        el:"#app",
+        data:{
+            R:100,
+            G:0,
+            B:20
+        }
+       })
+    </script>
+</html>

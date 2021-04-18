@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=退休金&cb=b
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度搜索</title>
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">=</script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="content">
+        <div>
+            <li v-for="item in results">{{item}}</li>
+        </div>
+    </div>
+</body>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                content:"",
+                results:[]
+            },
+            watch:{
+                content(tmp){
+                    var url='https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd='+tmp+'&cb=b'
+                    console.log(url)
+                    var script=document.createElement('script')
+                    script.src=url
+                    document.body.appendChild(script)
+                }
+
+            },
+            methods:{
+            }
+        })
+        function b(tmp) {
+            vm.results = tmp.s;
+        }
+
+    </script>
+</html>
