@@ -17,7 +17,7 @@
         prepend-icon="mdi-account-circle"
       >
         <template v-slot:activator>
-          <v-list-item-title>Users</v-list-item-title>
+          <v-list-item-title>测试用例</v-list-item-title>
         </template>
 
         <v-list-group
@@ -34,7 +34,7 @@
           <v-list-item
             v-for="([title, icon], i) in admins"
             :key="i"
-            link
+            link to="/navlist/testcase"
           >
             <v-list-item-title v-text="title"></v-list-item-title>
 
@@ -50,7 +50,7 @@
         >
           <template v-slot:activator>
             <v-list-item-content>
-              <v-list-item-title>Actions</v-list-item-title>
+              <v-list-item-title>测试报告</v-list-item-title>
             </v-list-item-content>
           </template>
 
@@ -75,7 +75,7 @@
   export default {
     data: () => ({
       admins: [
-        ['Management', 'mdi-account-multiple-outline'],
+        ['用例管理', 'mdi-account-multiple-outline'],
         ['Settings', 'mdi-cog-outline'],
       ],
       cruds: [
