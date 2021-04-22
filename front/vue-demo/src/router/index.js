@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Login from '../components/Login.vue'
 import NavList from '../components/NavList.vue'
 import TestCase from '../components/TestCase.vue'
+import Report from '@/components/Report.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -26,6 +27,11 @@ const routes = [
         path:'testcase',
         name: 'TestCase',
         component: TestCase
+      },
+      {
+        path:'report',
+        name: 'Report',
+        component: Report
       }
     ]
   },

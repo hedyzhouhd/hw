@@ -57,7 +57,7 @@
           <v-list-item
             v-for="([title, icon], i) in cruds"
             :key="i"
-            link
+            link to='/navlist/report'
           >
             <v-list-item-title v-text="title"></v-list-item-title>
 
